@@ -15,9 +15,13 @@ This is a program for working with nucleic acid.
 ## Commands
 
 `transcribe` - print the transcribed sequence. **Attention:** work only with DNA
+
 `reverse` - print reversed sequence
+
 `complement` - print complement sequence
+
 `reverse complement` - print reverse complement sequence
+
 `exit` — exit from the program
 
 
