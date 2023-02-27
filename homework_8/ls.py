@@ -22,7 +22,7 @@ try:
     if args.a:
         print('\n'.join(sorted(allfiles)))
     else:
-        files = list(sorted(filter(starts_with_dot, allfiles)))
+        files = sorted(filter(starts_with_dot, allfiles))
         print('\n'.join(files))
         
 except FileNotFoundError:
