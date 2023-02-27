@@ -10,7 +10,7 @@ parser.add_argument('-p', action='store_true',
 args = parser.parse_args()
 
 if args.p:
-    os.makedirs(args.dir)
+    os.makedirs(args.dir, exist_ok=True)
 else:
     try:
         os.mkdir(args.dir)
