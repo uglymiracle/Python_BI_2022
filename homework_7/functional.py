@@ -11,7 +11,8 @@ def func_chain(*args):
 
 def sequential_map(*args):
 
-    return list(map(func_chain(*args[:-1]), args[-1]))
+    chain = func_chain(*args[:-1])
+    return list(map(chain, args[-1]))
 
 
 def consensus_filter(*args):
