@@ -13,14 +13,7 @@ args = parser.parse_args()
 if args.r:
     try:
         for path in args.path:
-            for syst, dirs, files in os.walk(path, topdown=False):
-
-                for name in files:
-                    os.remove(os.path.join(syst, name))
-                for name in dirs:
-                    os.rmdir(os.path.join(syst, name))
-
-            os.rmdir(path)
+            shutil.rmtree(path)
         
     except FileNotFoundError:
         print("File or directory doesn't exist")
