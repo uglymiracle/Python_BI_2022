@@ -93,10 +93,10 @@ plt.xticks(np.arange(-10, 11, 5.0), size=10, weight='semibold')
 plt.yticks(np.arange(0, 110, 20.0), size=10, weight='semibold')
 
 #подсчет чисел для лимитов
-a=min(diffexpr['logFC'])
-b=max(diffexpr['logFC'])
-l= max(abs(a), abs(b)) + 1
-plt.xlim([-l, l])
+x_min = min(diffexpr['logFC'])
+x_max = max(diffexpr['logFC'])
+limit = max(abs(x_min), abs(x_max)) + 1
+plt.xlim([-limit, limit])
 
 #смена толщины осей
 for axis in ['top','bottom','left','right']:
