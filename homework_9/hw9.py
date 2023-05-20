@@ -30,7 +30,8 @@ class Message:
         return f"{self.datetime} - {self.user.username()}: {self.text}"
     
     def send(self, chat):
-        chat.recieve(self.show())
+        self.datetime = datetime.datetime.now()
+        chat.recieve(self)
 
 
 class User:
