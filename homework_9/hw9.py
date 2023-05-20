@@ -43,7 +43,7 @@ class User:
         self.age = age
         
     def username(self):
-        return(self.name+self.surname)
+        return self.name + self.surname
 
 
 telegram = Chat()
