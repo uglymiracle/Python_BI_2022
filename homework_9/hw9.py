@@ -23,7 +23,7 @@ class Message:
     def __init__(self, text, user):
         
         self.text = text
-        self.datetime = datetime.datetime.now()
+        self.datetime = None
         self.user = user
         
     def show(self):
